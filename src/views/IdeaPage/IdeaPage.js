@@ -137,7 +137,10 @@ export default function IdeaPage(props) {
                         formControlProps={{
                           fullWidth: true,
                         }}
-                        multiline
+                        inputProps={{
+                          multiline: true,
+                          rows: 5,
+                        }}
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>

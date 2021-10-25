@@ -56,29 +56,12 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://twitter.com/Engineerer_"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -91,7 +74,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.instagram.com/kaihosegopfertelli"
             target="_blank"
             className={classes.navLink}
           >
