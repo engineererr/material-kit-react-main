@@ -13,6 +13,13 @@ const ideaPageStyle = {
     opacity: "0",
     transform: "translate3d(0, -60px, 0)",
   },
+  addCardHidden: {
+    display: "none",
+    transform: "translate3d(0, -60px, 0)",
+  },
+  fab: {
+    marginBottom: "20px",
+  },
   pageHeader: {
     minHeight: "100vh",
     height: "auto",

@@ -12,10 +12,9 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Home, WbIncandescent } from "@material-ui/icons";
 
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
@@ -27,35 +26,21 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          buttonText="Pages"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent",
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/idea-page" className={classes.dropdownLink}>
-              Ideas
-            </Link>,
-            <a
-              href="/profile-page"
-              className={classes.dropdownLink}
-            >
-              Profile
-            </a>,
-          ]}
-        />
+        <Button
+          href="/"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Home className={classes.icons} /> Home
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href="/idea-page"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <WbIncandescent className={classes.icons} /> Ideas
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
